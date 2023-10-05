@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context=".CrudActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purpose"
+        android:id="@+id/purpose_tv"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/category_spinner"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/subcategory_spinner"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+       android:visibility="gone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/id_edittext"
+        android:hint="Enter ID"
+        android:maxLength="12"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/name_edittext"
+        android:hint="Enter Name"
+        android:maxLength="30"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_bg"
+        android:id="@+id/status_edittext"
+        android:hint="Enter Status"
+        android:maxLength="12"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textSize="30sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadimage_btn"
+        android:text="Update Image"
+        android:background="@color/skyblue"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:id="@+id/preview_imageview"
+        android:src="@drawable/helapuri"
+        android:layout_marginStart="10dp"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_btn"
+            android:text="Add"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/update_btn"
+            android:text="Update"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_btn"
+            android:text="Delete"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/read_btn"
+            android:text="Read"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_margin="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

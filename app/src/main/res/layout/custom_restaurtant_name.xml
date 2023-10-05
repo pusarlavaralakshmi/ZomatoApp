@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/restaurtant_img"
+        android:src="@drawable/zeeshan"/>
+
+
+
+    <TextView
+       android:id="@+id/restaurtant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Edit_Text4"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+
+</LinearLayout>
